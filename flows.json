@@ -174,6 +174,33 @@
         "className": ""
     },
     {
+        "id": "62a7d5c8030a6f3d",
+        "type": "telegram bot",
+        "botname": "proyecto_iot_bomberos_bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "testenvironment": false,
+        "updatemode": "polling",
+        "pollinterval": 300,
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": 6667,
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbothost": "0.0.0.0",
+        "localbotport": 8443,
+        "publicbotport": 8443,
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
         "id": "bb7bad37ee2f02b5",
         "type": "debug",
         "z": "3b2cc0de61dad3a2",
@@ -347,32 +374,36 @@
         ]
     },
     {
-        "id": "d14cc712e3afde57",
+        "id": "246547d03ade4dec",
         "type": "telegram receiver",
         "z": "3b2cc0de61dad3a2",
-        "name": "",
-        "bot": "",
+        "name": "recepcion de mensajes",
+        "bot": "62a7d5c8030a6f3d",
         "saveDataDir": "",
         "filterCommands": false,
-        "x": 130,
-        "y": 460,
+        "x": 180,
+        "y": 480,
         "wires": [
-            [],
+            [
+                "dab1e37c60ba2186"
+            ],
             []
         ]
     },
     {
-        "id": "4372623ce77fe8d4",
-        "type": "telegram sender",
+        "id": "dab1e37c60ba2186",
+        "type": "debug",
         "z": "3b2cc0de61dad3a2",
-        "name": "",
-        "bot": "",
-        "haserroroutput": false,
-        "outputs": 1,
-        "x": 470,
-        "y": 460,
-        "wires": [
-            []
-        ]
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 460,
+        "y": 480,
+        "wires": []
     }
 ]
