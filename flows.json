@@ -32,6 +32,37 @@
         "env": []
     },
     {
+        "id": "27d29fc30f9dd19e",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
         "id": "62a7d5c8030a6f3d",
         "type": "telegram bot",
         "botname": "proyecto_iot_bomberos_bot",
@@ -166,6 +197,22 @@
         "hidden": false
     },
     {
+        "id": "8c299c2f0f7af777",
+        "type": "ui_tab",
+        "name": "Estacion",
+        "icon": "fa-fire",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ee958f53a67d2d23",
+        "type": "ui_tab",
+        "name": "Info",
+        "icon": "fa-info",
+        "disabled": false,
+        "hidden": false
+    },
+    {
         "id": "4111e4c1da474739",
         "type": "ui_group",
         "name": "Redireccionar",
@@ -208,14 +255,6 @@
         "width": 6,
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "8c299c2f0f7af777",
-        "type": "ui_tab",
-        "name": "Estacion",
-        "icon": "fa-fire",
-        "disabled": false,
-        "hidden": false
     },
     {
         "id": "9ef916f3b1c10ddb",
@@ -262,14 +301,6 @@
         "className": ""
     },
     {
-        "id": "ee958f53a67d2d23",
-        "type": "ui_tab",
-        "name": "Info",
-        "icon": "fa-info",
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "4dfad305c64e93c6",
         "type": "ui_group",
         "name": "label1",
@@ -279,37 +310,6 @@
         "width": 6,
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "27d29fc30f9dd19e",
-        "type": "mqtt-broker",
-        "name": "",
-        "broker": "broker.hivemq.com",
-        "port": 1883,
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": 4,
-        "keepalive": 60,
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
     },
     {
         "id": "b668004eb6009ad2",
@@ -334,8 +334,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 380,
-        "y": 400,
+        "x": 540,
+        "y": 420,
         "wires": []
     },
     {
@@ -357,8 +357,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 510,
-        "y": 340,
+        "x": 670,
+        "y": 360,
         "wires": [
             []
         ]
@@ -375,8 +375,18 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 460,
-        "y": 480,
+        "x": 620,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "f3856d6c75b4e0f6",
+        "type": "comment",
+        "z": "3b2cc0de61dad3a2",
+        "name": "CSS",
+        "info": "",
+        "x": 290,
+        "y": 680,
         "wires": []
     },
     {
@@ -387,8 +397,8 @@
         "bot": "62a7d5c8030a6f3d",
         "saveDataDir": "",
         "filterCommands": false,
-        "x": 180,
-        "y": 480,
+        "x": 340,
+        "y": 500,
         "wires": [
             [
                 "dab1e37c60ba2186"
@@ -401,11 +411,11 @@
         "type": "telegram sender",
         "z": "3b2cc0de61dad3a2",
         "name": "",
-        "bot": "",
+        "bot": "62a7d5c8030a6f3d",
         "haserroroutput": false,
         "outputs": 1,
-        "x": 170,
-        "y": 560,
+        "x": 590,
+        "y": 600,
         "wires": [
             []
         ]
@@ -430,8 +440,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 160,
-        "y": 120,
+        "x": 320,
+        "y": 140,
         "wires": [
             [
                 "1c9d302d9c334c7f"
@@ -458,8 +468,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 150,
-        "y": 180,
+        "x": 310,
+        "y": 200,
         "wires": [
             [
                 "1c9d302d9c334c7f"
@@ -486,12 +496,54 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 110,
-        "y": 240,
+        "x": 270,
+        "y": 260,
         "wires": [
             [
                 "1c9d302d9c334c7f"
             ]
+        ]
+    },
+    {
+        "id": "1c9d302d9c334c7f",
+        "type": "ui_template",
+        "z": "3b2cc0de61dad3a2",
+        "group": "4111e4c1da474739",
+        "name": "Logica de redireccionamiento",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<script>\n(function(scope){\n    scope.$watch('msg.payload', function(link) {\n        if (link) window.open(link, '_blank');\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 640,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "67cf83c8bf38507a",
+        "type": "ui_template",
+        "z": "3b2cc0de61dad3a2",
+        "group": "",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<div>\n<link href=\"https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap\" rel=\"stylesheet\">\n<style>\n    body {\n        --background: #212529;\n        --on-background: white;\n        --surface: #2d3136;\n        --on-surface: white;\n        --primary: var(--nr-dashboard-widgetColor);\n        --on-primary: white;\n        --secondary: var(--nr-dashboard-groupTextColor);\n        --accent: red;\n        --radius-s: 8px;\n        --font-weight-m: 300;\n        --font-weight-m: 500;\n        --font-weight-l: 700;\n        --space-s: 8px;\n        --space-m: 16px;\n        --space-l: 32px;\n    }\n\n    body.nr-dashboard-theme {\n        background-color: var(--background);\n        font-family: 'Montserrat', sans-serif;\n    }\n\n    /* BARRA SUPERIOR y LATERAL ROJOS BOMBERO */\n    body.nr-dashboard-theme md-toolbar,\n    body.nr-dashboard-theme md-sidenav {\n        background-color: #a12034 !important;\n        color: var(--on-background)!important;\n        border: none;\n    }\n\n    .nr-dashboard-theme ui-card-panel {\n        background-color: var(--background);\n        border: 0;\n    }\n\n    .nr-dashboard-theme .nr-dashboard-button .md-button {\n        background-color: var(--primary);\n        border-radius: var(--radius-s);\n        padding: 8px !important;\n        line-height: inherit;\n        font-weight: var(--font-weight-l);\n        color: var(--on-primary);\n    }\n\n    .nr-dashboard-theme [ui-card-size=\"2x2\"].nr-dashboard-button .md-button {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        white-space: pre-line;\n    }\n    /* el resto igual, SIN cambios extra */\n</style>\n</div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 300,
+        "y": 740,
+        "wires": [
+            []
         ]
     },
     {
@@ -512,8 +564,8 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 140,
-        "y": 340,
+        "x": 300,
+        "y": 360,
         "wires": [
             [
                 "9a067028a8b51ddc",
@@ -522,55 +574,52 @@
         ]
     },
     {
-        "id": "1c9d302d9c334c7f",
-        "type": "ui_template",
+        "id": "472fd921027b5170",
+        "type": "inject",
         "z": "3b2cc0de61dad3a2",
-        "group": "4111e4c1da474739",
-        "name": "Logica de redireccionamiento",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "format": "<script>\n(function(scope){\n    scope.$watch('msg.payload', function(link) {\n        if (link) window.open(link, '_blank');\n    });\n})(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 480,
-        "y": 180,
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 600,
         "wires": [
-            []
+            [
+                "704970584aea2565"
+            ]
         ]
     },
     {
-        "id": "f3856d6c75b4e0f6",
-        "type": "comment",
+        "id": "704970584aea2565",
+        "type": "function",
         "z": "3b2cc0de61dad3a2",
-        "name": "CSS",
-        "info": "",
-        "x": 130,
-        "y": 660,
-        "wires": []
-    },
-    {
-        "id": "67cf83c8bf38507a",
-        "type": "ui_template",
-        "z": "3b2cc0de61dad3a2",
-        "group": "",
-        "name": "",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "format": "<div>\n<link href=\"https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap\" rel=\"stylesheet\">\n<style>\n    body {\n        --background: #212529;\n        --on-background: white;\n        --surface: #2d3136;\n        --on-surface: white;\n        --primary: var(--nr-dashboard-widgetColor);\n        --on-primary: white;\n        --secondary: var(--nr-dashboard-groupTextColor);\n        --accent: red;\n        --radius-s: 8px;\n        --font-weight-m: 300;\n        --font-weight-m: 500;\n        --font-weight-l: 700;\n        --space-s: 8px;\n        --space-m: 16px;\n        --space-l: 32px;\n    }\n\n    body.nr-dashboard-theme {\n        background-color: var(--background);\n        font-family: 'Montserrat', sans-serif;\n    }\n\n    /* BARRA SUPERIOR y LATERAL ROJOS BOMBERO */\n    body.nr-dashboard-theme md-toolbar,\n    body.nr-dashboard-theme md-sidenav {\n        background-color: #a12034 !important;\n        color: var(--on-background)!important;\n        border: none;\n    }\n\n    .nr-dashboard-theme ui-card-panel {\n        background-color: var(--background);\n        border: 0;\n    }\n\n    .nr-dashboard-theme .nr-dashboard-button .md-button {\n        background-color: var(--primary);\n        border-radius: var(--radius-s);\n        padding: 8px !important;\n        line-height: inherit;\n        font-weight: var(--font-weight-l);\n        color: var(--on-primary);\n    }\n\n    .nr-dashboard-theme [ui-card-size=\"2x2\"].nr-dashboard-button .md-button {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        white-space: pre-line;\n    }\n    /* el resto igual, SIN cambios extra */\n</style>\n</div>\n",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "global",
-        "className": "",
-        "x": 140,
-        "y": 720,
+        "name": "function 1",
+        "func": "msg.payload =\n{\n    \"chatId\": -4899681942,\n    \"type\":\"message\",\n    \"content\":\"respuesta de node red\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 600,
         "wires": [
-            []
+            [
+                "4b20bce5037f1b67"
+            ]
         ]
     },
     {
@@ -661,53 +710,101 @@
         ]
     },
     {
-        "id": "e8d9efdfd4d02d81",
-        "type": "random",
+        "id": "f2adc788e2c1ec7a",
+        "type": "inject",
         "z": "7d6de10f330e3986",
         "name": "",
-        "low": "20",
-        "high": "120",
-        "inte": "true",
-        "property": "payload",
-        "x": 320,
-        "y": 160,
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 80,
         "wires": [
             [
-                "531bf9c5741291dc"
+                "0ce7e2d69b41c17c"
             ]
         ]
     },
     {
-        "id": "2af01e3217439278",
-        "type": "random",
+        "id": "f62a90d1fde440ba",
+        "type": "comment",
+        "z": "7d6de10f330e3986",
+        "name": "Presión",
+        "info": "",
+        "x": 110,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "017e724906304e30",
+        "type": "comment",
+        "z": "7d6de10f330e3986",
+        "name": "Nivel de tanque",
+        "info": "",
+        "x": 140,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "36e2c054b9929f02",
+        "type": "comment",
+        "z": "7d6de10f330e3986",
+        "name": "Caudal",
+        "info": "",
+        "x": 110,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "e6681d470fa9f7ac",
+        "type": "comment",
+        "z": "7d6de10f330e3986",
+        "name": "Estado bomba1/bomba2",
+        "info": "",
+        "x": 210,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "276034a667d35413",
+        "type": "ui_gauge",
         "z": "7d6de10f330e3986",
         "name": "",
-        "low": "0",
-        "high": "100",
-        "inte": "true",
-        "property": "payload",
-        "x": 340,
+        "group": "9ef916f3b1c10ddb",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Nivel del tanque",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#b30c00",
+            "#e6e600",
+            "#74cb3a"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 560,
         "y": 280,
-        "wires": [
-            [
-                "276034a667d35413"
-            ]
-        ]
-    },
-    {
-        "id": "1cf88900ca3fe54d",
-        "type": "random",
-        "z": "7d6de10f330e3986",
-        "name": "",
-        "low": 1,
-        "high": "2",
-        "inte": "true",
-        "property": "payload",
-        "x": 300,
-        "y": 400,
-        "wires": [
-            []
-        ]
+        "wires": []
     },
     {
         "id": "6944477d9d888ee1",
@@ -798,60 +895,52 @@
         ]
     },
     {
-        "id": "276034a667d35413",
-        "type": "ui_gauge",
+        "id": "e8d9efdfd4d02d81",
+        "type": "random",
         "z": "7d6de10f330e3986",
         "name": "",
-        "group": "9ef916f3b1c10ddb",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "gtype": "gage",
-        "title": "Nivel del tanque",
-        "label": "%",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "100",
-        "colors": [
-            "#b30c00",
-            "#e6e600",
-            "#74cb3a"
-        ],
-        "seg1": "",
-        "seg2": "",
-        "diff": false,
-        "className": "",
-        "x": 560,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "f2adc788e2c1ec7a",
-        "type": "inject",
-        "z": "7d6de10f330e3986",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "60",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 150,
-        "y": 80,
+        "low": "20",
+        "high": "120",
+        "inte": "true",
+        "property": "payload",
+        "x": 350,
+        "y": 160,
         "wires": [
             [
-                "0ce7e2d69b41c17c"
+                "531bf9c5741291dc"
             ]
+        ]
+    },
+    {
+        "id": "2af01e3217439278",
+        "type": "random",
+        "z": "7d6de10f330e3986",
+        "name": "",
+        "low": "0",
+        "high": "100",
+        "inte": "true",
+        "property": "payload",
+        "x": 370,
+        "y": 280,
+        "wires": [
+            [
+                "276034a667d35413"
+            ]
+        ]
+    },
+    {
+        "id": "1cf88900ca3fe54d",
+        "type": "random",
+        "z": "7d6de10f330e3986",
+        "name": "",
+        "low": 1,
+        "high": "2",
+        "inte": "true",
+        "property": "payload",
+        "x": 300,
+        "y": 400,
+        "wires": [
+            []
         ]
     },
     {
@@ -863,7 +952,7 @@
         "high": "100",
         "inte": "true",
         "property": "payload",
-        "x": 320,
+        "x": 350,
         "y": 80,
         "wires": [
             [
@@ -872,44 +961,113 @@
         ]
     },
     {
-        "id": "f62a90d1fde440ba",
-        "type": "comment",
-        "z": "7d6de10f330e3986",
-        "name": "Presión",
-        "info": "",
-        "x": 110,
-        "y": 40,
+        "id": "06028a1372a95266",
+        "type": "mqtt in",
+        "z": "5bba19921cbc0102",
+        "name": "",
+        "topic": "Utmach/6A/KvPZ/ProyectoBomberos/Info",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "27d29fc30f9dd19e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 200,
+        "y": 200,
+        "wires": [
+            [
+                "5c0039fa7148d0f1"
+            ]
+        ]
+    },
+    {
+        "id": "42f26a2769554530",
+        "type": "mqtt out",
+        "z": "5bba19921cbc0102",
+        "name": "",
+        "topic": "Utmach/6A/KvPZ/ProyectoBomberos/Info",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "27d29fc30f9dd19e",
+        "x": 520,
+        "y": 140,
         "wires": []
     },
     {
-        "id": "017e724906304e30",
-        "type": "comment",
-        "z": "7d6de10f330e3986",
-        "name": "Nivel de tanque",
-        "info": "",
-        "x": 140,
-        "y": 220,
+        "id": "d4113765cc8c613d",
+        "type": "inject",
+        "z": "5bba19921cbc0102",
+        "name": "Datos para la tabla",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[{\"timestamp\":\"2025-10-26T20:30:00\",\"presion\":2.4,\"caudal\":120,\"nivel_tanque\":75,\"bomba1\":\"on\",\"bomba2\":\"off\"},{\"timestamp\":\"2025-10-26T20:35:00\",\"presion\":2.7,\"caudal\":125,\"nivel_tanque\":78,\"bomba1\":\"off\",\"bomba2\":\"on\"},{\"timestamp\":\"2025-10-26T20:40:00\",\"presion\":2.5,\"caudal\":118,\"nivel_tanque\":74,\"bomba1\":\"on\",\"bomba2\":\"off\"}]",
+        "payloadType": "json",
+        "x": 170,
+        "y": 140,
+        "wires": [
+            [
+                "42f26a2769554530"
+            ]
+        ]
+    },
+    {
+        "id": "c3907e816360de9f",
+        "type": "ui_text",
+        "z": "5bba19921cbc0102",
+        "group": "b668004eb6009ad2",
+        "order": 1,
+        "width": "16",
+        "height": "1",
+        "name": "",
+        "label": "Informacion de la estacion",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "Lucida Sans Typewriter,Lucida Console,Monaco,monospace",
+        "fontSize": "18",
+        "color": "#000000",
+        "x": 190,
+        "y": 80,
         "wires": []
     },
     {
-        "id": "36e2c054b9929f02",
-        "type": "comment",
-        "z": "7d6de10f330e3986",
-        "name": "Caudal",
-        "info": "",
-        "x": 110,
-        "y": 120,
-        "wires": []
-    },
-    {
-        "id": "e6681d470fa9f7ac",
-        "type": "comment",
-        "z": "7d6de10f330e3986",
-        "name": "Estado bomba1/bomba2",
-        "info": "",
-        "x": 210,
-        "y": 340,
-        "wires": []
+        "id": "f1bcab3184fba64e",
+        "type": "ui_template",
+        "z": "5bba19921cbc0102",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 660,
+        "y": 200,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "5c0039fa7148d0f1",
@@ -990,115 +1148,6 @@
             [
                 "f1bcab3184fba64e"
             ]
-        ]
-    },
-    {
-        "id": "c3907e816360de9f",
-        "type": "ui_text",
-        "z": "5bba19921cbc0102",
-        "group": "b668004eb6009ad2",
-        "order": 1,
-        "width": "16",
-        "height": "1",
-        "name": "",
-        "label": "Informacion de la estacion",
-        "format": "{{msg.payload}}",
-        "layout": "row-left",
-        "className": "",
-        "style": false,
-        "font": "Lucida Sans Typewriter,Lucida Console,Monaco,monospace",
-        "fontSize": "18",
-        "color": "#000000",
-        "x": 190,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "06028a1372a95266",
-        "type": "mqtt in",
-        "z": "5bba19921cbc0102",
-        "name": "",
-        "topic": "Utmach/6A/KvPZ/ProyectoBomberos/Info",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "27d29fc30f9dd19e",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 200,
-        "y": 200,
-        "wires": [
-            [
-                "5c0039fa7148d0f1"
-            ]
-        ]
-    },
-    {
-        "id": "42f26a2769554530",
-        "type": "mqtt out",
-        "z": "5bba19921cbc0102",
-        "name": "",
-        "topic": "Utmach/6A/KvPZ/ProyectoBomberos/Info",
-        "qos": "",
-        "retain": "",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "27d29fc30f9dd19e",
-        "x": 520,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "d4113765cc8c613d",
-        "type": "inject",
-        "z": "5bba19921cbc0102",
-        "name": "Datos para la tabla",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "[{\"timestamp\":\"2025-10-26T20:30:00\",\"presion\":2.4,\"caudal\":120,\"nivel_tanque\":75,\"bomba1\":\"on\",\"bomba2\":\"off\"},{\"timestamp\":\"2025-10-26T20:35:00\",\"presion\":2.7,\"caudal\":125,\"nivel_tanque\":78,\"bomba1\":\"off\",\"bomba2\":\"on\"},{\"timestamp\":\"2025-10-26T20:40:00\",\"presion\":2.5,\"caudal\":118,\"nivel_tanque\":74,\"bomba1\":\"on\",\"bomba2\":\"off\"}]",
-        "payloadType": "json",
-        "x": 170,
-        "y": 140,
-        "wires": [
-            [
-                "42f26a2769554530"
-            ]
-        ]
-    },
-    {
-        "id": "f1bcab3184fba64e",
-        "type": "ui_template",
-        "z": "5bba19921cbc0102",
-        "name": "",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "format": "<div ng-bind-html=\"msg.payload\"></div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 620,
-        "y": 200,
-        "wires": [
-            []
         ]
     }
 ]
