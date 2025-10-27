@@ -2,7 +2,7 @@
     {
         "id": "3b2cc0de61dad3a2",
         "type": "tab",
-        "label": "Home",
+        "label": "Esacion-Noticiaciones",
         "disabled": false,
         "info": "",
         "env": []
@@ -103,16 +103,16 @@
                     "edited": true
                 },
                 "group-textColor": {
-                    "value": "#b5b5b5",
+                    "value": "#f4ff9e",
                     "edited": true
                 },
                 "group-borderColor": {
-                    "value": "#555555",
-                    "edited": false
+                    "value": "#41404a",
+                    "edited": true
                 },
                 "group-backgroundColor": {
-                    "value": "#333333",
-                    "edited": false
+                    "value": "#303031",
+                    "edited": true
                 },
                 "widget-textColor": {
                     "value": "#eeeeee",
@@ -169,8 +169,8 @@
         "id": "4111e4c1da474739",
         "type": "ui_group",
         "name": "Redireccionar",
-        "tab": "a21e2a6eb69b440e",
-        "order": 4,
+        "tab": "8c299c2f0f7af777",
+        "order": 8,
         "disp": false,
         "width": 6,
         "collapse": false,
@@ -191,10 +191,10 @@
         "id": "355ca37c44afaa38",
         "type": "ui_group",
         "name": "Telegram:",
-        "tab": "a21e2a6eb69b440e",
-        "order": 3,
+        "tab": "8c299c2f0f7af777",
+        "order": 1,
         "disp": true,
-        "width": 6,
+        "width": 20,
         "collapse": false,
         "className": ""
     },
@@ -202,8 +202,8 @@
         "id": "76646d7bd18bb340",
         "type": "ui_group",
         "name": "Informacion:",
-        "tab": "a21e2a6eb69b440e",
-        "order": 2,
+        "tab": "8c299c2f0f7af777",
+        "order": 6,
         "disp": true,
         "width": 6,
         "collapse": false,
@@ -222,7 +222,7 @@
         "type": "ui_group",
         "name": "NTanque",
         "tab": "8c299c2f0f7af777",
-        "order": 1,
+        "order": 5,
         "disp": false,
         "width": 6,
         "collapse": false,
@@ -233,7 +233,7 @@
         "type": "ui_group",
         "name": "Template",
         "tab": "8c299c2f0f7af777",
-        "order": 2,
+        "order": 4,
         "disp": true,
         "width": 6,
         "collapse": false,
@@ -244,7 +244,7 @@
         "type": "ui_group",
         "name": "Caudal",
         "tab": "8c299c2f0f7af777",
-        "order": 3,
+        "order": 7,
         "disp": false,
         "width": 6,
         "collapse": false,
@@ -255,7 +255,7 @@
         "type": "ui_group",
         "name": "Presion",
         "tab": "8c299c2f0f7af777",
-        "order": 4,
+        "order": 9,
         "disp": false,
         "width": 6,
         "collapse": false,
@@ -314,13 +314,56 @@
     {
         "id": "b668004eb6009ad2",
         "type": "ui_group",
-        "name": "TablaInfo",
+        "name": "Tabla",
         "tab": "ee958f53a67d2d23",
         "order": 2,
         "disp": false,
+        "width": 15,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "94295d2437ce9f72",
+        "type": "ui_group",
+        "name": "Detalles",
+        "tab": "ee958f53a67d2d23",
+        "order": 3,
+        "disp": true,
         "width": 6,
         "collapse": false,
         "className": ""
+    },
+    {
+        "id": "da172df73faabb83",
+        "type": "ui_group",
+        "name": "ComboBox",
+        "tab": "8c299c2f0f7af777",
+        "order": 3,
+        "disp": true,
+        "width": 16,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "43cc39caf43ab5a8",
+        "type": "ui_group",
+        "name": "Encabezado_1",
+        "tab": "8c299c2f0f7af777",
+        "order": 2,
+        "disp": false,
+        "width": 20,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fc31f63ab16e361c",
+        "type": "ui_spacer",
+        "z": "7d6de10f330e3986",
+        "name": "spacer",
+        "group": "da172df73faabb83",
+        "order": 2,
+        "width": 5,
+        "height": 1
     },
     {
         "id": "bb7bad37ee2f02b5",
@@ -404,38 +447,10 @@
         "bot": "",
         "haserroroutput": false,
         "outputs": 1,
-        "x": 170,
+        "x": 290,
         "y": 560,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "e68eaf47746d8e24",
-        "type": "ui_button",
-        "z": "3b2cc0de61dad3a2",
-        "name": "",
-        "group": "81be66aacc7f99b0",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Conectarse con Gmail",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "transparent",
-        "className": "",
-        "icon": "fa-google",
-        "payload": "https://accounts.google.com/signin",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 160,
-        "y": 120,
-        "wires": [
-            [
-                "1c9d302d9c334c7f"
-            ]
         ]
     },
     {
@@ -444,11 +459,11 @@
         "z": "3b2cc0de61dad3a2",
         "name": "",
         "group": "355ca37c44afaa38",
-        "order": 0,
+        "order": 1,
         "width": 0,
         "height": 0,
         "passthru": false,
-        "label": "Coenctarse a Telegram",
+        "label": "Conectarse a Telegram ",
         "tooltip": "",
         "color": "",
         "bgcolor": "transparent",
@@ -459,7 +474,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 150,
-        "y": 180,
+        "y": 60,
         "wires": [
             [
                 "1c9d302d9c334c7f"
@@ -470,9 +485,10 @@
         "id": "f23ce64483d21bdb",
         "type": "ui_button",
         "z": "3b2cc0de61dad3a2",
+        "d": true,
         "name": "",
         "group": "76646d7bd18bb340",
-        "order": 0,
+        "order": 1,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -487,7 +503,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 110,
-        "y": 240,
+        "y": 140,
         "wires": [
             [
                 "1c9d302d9c334c7f"
@@ -498,11 +514,12 @@
         "id": "693c33854147c464",
         "type": "ui_text_input",
         "z": "3b2cc0de61dad3a2",
+        "d": true,
         "name": "",
         "label": "Ingrese aqui el Token de Telegram",
         "tooltip": "",
         "group": "355ca37c44afaa38",
-        "order": 1,
+        "order": 3,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -512,7 +529,7 @@
         "sendOnBlur": true,
         "className": "",
         "topicType": "msg",
-        "x": 140,
+        "x": 180,
         "y": 340,
         "wires": [
             [
@@ -525,9 +542,9 @@
         "id": "1c9d302d9c334c7f",
         "type": "ui_template",
         "z": "3b2cc0de61dad3a2",
-        "group": "4111e4c1da474739",
+        "group": "355ca37c44afaa38",
         "name": "Logica de redireccionamiento",
-        "order": 0,
+        "order": 2,
         "width": 0,
         "height": 0,
         "format": "<script>\n(function(scope){\n    scope.$watch('msg.payload', function(link) {\n        if (link) window.open(link, '_blank');\n    });\n})(scope);\n</script>",
@@ -537,7 +554,7 @@
         "templateScope": "local",
         "className": "",
         "x": 480,
-        "y": 180,
+        "y": 120,
         "wires": [
             []
         ]
@@ -595,7 +612,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 150,
-        "y": 160,
+        "y": 300,
         "wires": [
             [
                 "e8d9efdfd4d02d81"
@@ -624,7 +641,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 130,
-        "y": 280,
+        "y": 420,
         "wires": [
             [
                 "2af01e3217439278"
@@ -653,7 +670,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 120,
-        "y": 400,
+        "y": 540,
         "wires": [
             [
                 "1cf88900ca3fe54d"
@@ -670,10 +687,10 @@
         "inte": "true",
         "property": "payload",
         "x": 320,
-        "y": 160,
+        "y": 300,
         "wires": [
             [
-                "531bf9c5741291dc"
+                "967e8d65a18dde6f"
             ]
         ]
     },
@@ -687,7 +704,7 @@
         "inte": "true",
         "property": "payload",
         "x": 340,
-        "y": 280,
+        "y": 420,
         "wires": [
             [
                 "276034a667d35413"
@@ -704,95 +721,7 @@
         "inte": "true",
         "property": "payload",
         "x": 300,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6944477d9d888ee1",
-        "type": "ui_chart",
-        "z": "7d6de10f330e3986",
-        "name": "",
-        "group": "5f64cf6f2d6a1bc9",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "label": "chart",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 530,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "531bf9c5741291dc",
-        "type": "ui_chart",
-        "z": "7d6de10f330e3986",
-        "name": "",
-        "group": "222335c7c588548b",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "label": "chart",
-        "chartType": "line",
-        "legend": "false",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "useUTC": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "outputs": 1,
-        "useDifferentColor": false,
-        "className": "",
-        "x": 530,
-        "y": 160,
+        "y": 540,
         "wires": [
             []
         ]
@@ -803,13 +732,13 @@
         "z": "7d6de10f330e3986",
         "name": "",
         "group": "9ef916f3b1c10ddb",
-        "order": 0,
+        "order": 1,
         "width": 0,
         "height": 0,
-        "gtype": "gage",
+        "gtype": "wave",
         "title": "Nivel del tanque",
         "label": "%",
-        "format": "{{value}}",
+        "format": "{{value| number:2}}",
         "min": 0,
         "max": "100",
         "colors": [
@@ -822,7 +751,7 @@
         "diff": false,
         "className": "",
         "x": 560,
-        "y": 280,
+        "y": 420,
         "wires": []
     },
     {
@@ -847,7 +776,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 150,
-        "y": 80,
+        "y": 220,
         "wires": [
             [
                 "0ce7e2d69b41c17c"
@@ -864,10 +793,10 @@
         "inte": "true",
         "property": "payload",
         "x": 320,
-        "y": 80,
+        "y": 220,
         "wires": [
             [
-                "6944477d9d888ee1"
+                "e80dd09a1f98e5d7"
             ]
         ]
     },
@@ -878,7 +807,7 @@
         "name": "Presión",
         "info": "",
         "x": 110,
-        "y": 40,
+        "y": 180,
         "wires": []
     },
     {
@@ -888,7 +817,7 @@
         "name": "Nivel de tanque",
         "info": "",
         "x": 140,
-        "y": 220,
+        "y": 360,
         "wires": []
     },
     {
@@ -898,7 +827,7 @@
         "name": "Caudal",
         "info": "",
         "x": 110,
-        "y": 120,
+        "y": 260,
         "wires": []
     },
     {
@@ -908,8 +837,152 @@
         "name": "Estado bomba1/bomba2",
         "info": "",
         "x": 210,
-        "y": 340,
+        "y": 480,
         "wires": []
+    },
+    {
+        "id": "24e18254a0b54b18",
+        "type": "ui_dropdown",
+        "z": "7d6de10f330e3986",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "place": "Selecciona una bomba de agua",
+        "group": "da172df73faabb83",
+        "order": 1,
+        "width": 11,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Bomba 1",
+                "value": 1,
+                "type": "num"
+            },
+            {
+                "label": "Bomba 2",
+                "value": 2,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "5c35ebdf73347989"
+            ]
+        ]
+    },
+    {
+        "id": "98ae1d0c019e36a9",
+        "type": "ui_text",
+        "z": "7d6de10f330e3986",
+        "group": "43cc39caf43ab5a8",
+        "order": 1,
+        "width": 20,
+        "height": 1,
+        "name": "",
+        "label": "Informacion de la estacion",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "Lucida Sans Typewriter,Lucida Console,Monaco,monospace",
+        "fontSize": "18",
+        "color": "#000000",
+        "x": 170,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "967e8d65a18dde6f",
+        "type": "ui_gauge",
+        "z": "7d6de10f330e3986",
+        "name": "",
+        "group": "222335c7c588548b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "Caudal del agua",
+        "label": "l/s",
+        "format": "{{value| number:2}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#b30c00",
+            "#e6e600",
+            "#74cb3a"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 560,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "e80dd09a1f98e5d7",
+        "type": "ui_gauge",
+        "z": "7d6de10f330e3986",
+        "name": "",
+        "group": "5f64cf6f2d6a1bc9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "Presion del Tanque",
+        "label": "psi",
+        "format": "{{value| number:2}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#b30c00",
+            "#e6e600",
+            "#74cb3a"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 570,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "5c35ebdf73347989",
+        "type": "switch",
+        "z": "7d6de10f330e3986",
+        "name": "if de bomba",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 290,
+        "y": 140,
+        "wires": [
+            [],
+            []
+        ]
     },
     {
         "id": "5c0039fa7148d0f1",
@@ -918,13 +991,13 @@
         "group": "b668004eb6009ad2",
         "name": "",
         "order": 2,
-        "width": "16",
-        "height": "8",
+        "width": 15,
+        "height": 8,
         "columns": [
             {
                 "field": "timestamp",
                 "title": "Fecha y hora del registro",
-                "width": "22",
+                "width": "",
                 "align": "center",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -934,7 +1007,7 @@
             {
                 "field": "presion",
                 "title": "PSI",
-                "width": "10",
+                "width": "",
                 "align": "center",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -944,7 +1017,7 @@
             {
                 "field": "caudal",
                 "title": "l/s",
-                "width": "10",
+                "width": "",
                 "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
@@ -954,9 +1027,9 @@
             {
                 "field": "nivel_tanque",
                 "title": "% Del Tanque",
-                "width": "10",
+                "width": "",
                 "align": "left",
-                "formatter": "progress",
+                "formatter": "plaintext",
                 "formatterParams": {
                     "target": "_blank"
                 }
@@ -998,8 +1071,8 @@
         "z": "5bba19921cbc0102",
         "group": "b668004eb6009ad2",
         "order": 1,
-        "width": "16",
-        "height": "1",
+        "width": 15,
+        "height": 1,
         "name": "",
         "label": "Informacion de la estacion",
         "format": "{{msg.payload}}",
@@ -1085,17 +1158,42 @@
         "id": "f1bcab3184fba64e",
         "type": "ui_template",
         "z": "5bba19921cbc0102",
+        "group": "94295d2437ce9f72",
         "name": "",
-        "order": 0,
+        "order": 1,
         "width": 0,
         "height": 0,
-        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "format": "<div class=\"form-container\">\n    <form>\n        <div class=\"form-group\">\n            <label for=\"fecha\">Fecha:</label>\n            <input type=\"text\" id=\"fecha\" value=\"{{msg.payload.Fecha}}\" disabled>\n        </div>\n\n        <div class=\"form-group\">\n            <label for=\"hora\">Hora:</label>\n            <input type=\"text\" id=\"hora\" value=\"{{msg.payload.Hora}}\" disabled>\n        </div>\n\n        <div class=\"form-group\">\n            <label for=\"cliente\">Cliente:</label>\n            <input type=\"text\" id=\"cliente\" value=\"{{msg.payload.Cliente}}\" disabled>\n        </div>\n\n        <div class=\"form-group\">\n            <label for=\"sala\">Sala:</label>\n            <input type=\"text\" id=\"sala\" value=\"{{msg.payload.Sala}}\" disabled>\n        </div>\n\n        <div class=\"form-group\">\n            <label for=\"personas\">N° Personas:</label>\n            <input type=\"text\" id=\"personas\" value=\"{{msg.payload.Personas}}\" disabled>\n        </div>\n\n        <div class=\"form-group\">\n            <label for=\"equipo\">Equipo:</label>\n            <input type=\"text\" id=\"equipo\" value=\"{{msg.payload.Equipo}}\" disabled>\n        </div>\n\n        <div class=\"form-group\">\n            <label for=\"proposito\">Propósito:</label>\n            <input type=\"text\" id=\"proposito\" value=\"{{msg.payload.Proposito}}\" disabled>\n        </div>\n    </form>\n</div>\n\n<style>\n    .form-container {\n    font-family: inherit;\n    padding: 10px;\n    width: 100%;\n    max-width: 400px;\n    margin: 0 auto;\n    }\n    \n    .form-group {\n    margin-bottom: 10px;\n    }\n    \n    label {\n    display: block;\n    font-weight: bold;\n    margin-bottom: 5px;\n    }\n    \n    input[type=\"text\"] {\n    font-family: inherit;\n    width: 100%;\n    padding: 8px;\n    font-size: 16px;\n    color: inherit;\n    cursor: not-allowed;\n    background-color: inherit; /* Asegura que el fondo se herede del contenedor */\n    }\n    \n    input[type=\"text\"]:disabled {\n    background-color: inherit; /* Puedes personalizar este color si deseas algo diferente */\n    }\n    \n</style>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
         "className": "",
         "x": 620,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "98c14654e1f53e2d",
+        "type": "ui_text_input",
+        "z": "5bba19921cbc0102",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "94295d2437ce9f72",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 780,
         "y": 200,
         "wires": [
             []
